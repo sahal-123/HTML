@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forms1.css">
+</head>
+<body>
+    <div class="container">
+        <form action="submit.html" method="post">
+            <div class="item">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" required pattern="[A-Za-z]+" title="only alphabets" minlength="3" maxlength="6">
+            </div><br>
+             <div class="item">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" required pattern="[A-Za-z]+" title="only alphabets" minlength="3" maxlength="6">
+            </div>   
+            <div class="fromex">
+                <input type="submit" value="submit">
+            </div>
+            <div>
+                <label for="email">email</label>
+                <input type="email" id="email" >
+            </div>
+            <br>
+            <div>
+                <label for="password">password</label>
+                <input type="password" id="password">
+            </div>
+            <br>
+            <div>
+            <label for="color">color</label>
+                <input type="color">
+                 </div>
+                 <div>
+            <label for="">time</label>
+                <input type="time">
+                </div>
+                <br>
+            <div>
+            <label for="">date</label>
+                <input type="date">
+            </div>
+            <br>
+             <div>
+            <label for="">file</label>
+                <input type="file">
+             </div>
+             <br>
+             <fieldset>
+                <legend>COURSE DETAILS</legend>
+              <div>
+            <label for="">course</label>
+            <br>
+             <label for="">html</label>
+                <input type="checkbox" name="course" value="html">
+                <label for="">CSS</label>
+                <input type="checkbox" name="course" value="css">
+                <br>
+
+              </div>
+            <label for="">gender</label>
+            <br>
+            <div>
+            <label for="">male</label>
+                <input type="radio" name="gender" value="male">
+                <label for="">female</label>
+                <input type="radio" name="gender" value="female">
+            </div>
+               <br>
+               <div>
+                <textarea name="" id=""></textarea>
+               </div>
+               <select name="subject" id="">
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="java">java</option>
+               </select>
+               </fieldset>
+                <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>

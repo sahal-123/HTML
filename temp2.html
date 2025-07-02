@@ -1,0 +1,118 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cnt{
+            height: 700px;
+            width: 800px;
+            background-color: red;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows:auto auto auto;
+            grid-template-areas: "header header header"
+            " . . ."
+            " footer footer footer";
+        
+            
+        }
+        .c1{
+            border: 4px solid black;
+            background-color: yellow;
+        }
+        .h{
+            grid-area: header;
+            background-color: green;
+        }
+        .ck{
+            grid-area: footer;
+            background-color: blue;
+        }
+        .c2{
+            border: 4px solid  black;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="cnt">
+     <div class="h"></div>
+    <div class="c1"></div> 
+    <div class="c1"></div>
+    <div class="c1"></div>
+    <div class="ck"></div>
+    <div class="c2"></div>
+    <div class="c2"></div>
+    <div class="c2" style="background-color: brown;"></div>
+    
+    
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cntr {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: auto auto auto auto;
+            background-color: rgb(6, 176, 249);
+            height: 700px;
+            width: 1000px;
+            /*grid-template-areas: "header cnt main"
+            "header cnt main"
+            "header cnt main";*/
+            grid-template-areas: "header header header header"
+                "main main empty sidebar"
+                "footer footer footer footer";
+        }
+
+        .header {
+            grid-area: header;
+            background-color: rgb(43, 55, 226);
+        }
+
+        .main {
+            background-color: rgb(26, 209, 133);
+            grid-area: main;
+
+
+        }
+
+        .empty {
+            border: 4px solid bisque;
+            background-color: rgb(240, 241, 237);
+
+            grid-area: empty;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: rgb(245, 150, 8);
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cntr">
+        <div class="header">hheader</div>
+        <div class="main">main</div>
+        <div class="empty">empty</div>
+        <div class="footer">footer</div>
+        <div class="sidebar">sidebar</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- simple audio -->
+     <h2>simple audio</h2>
+    <audio controls>
+        <source src="./WhatsApp Audio 2025-06-15 at 18.11.06_d8bedfd2.waptt.opus">
+    </audio>
+    
+<!-- preload meta data only -->
+ <h2>metadata only</h2>
+ <audio controls preload="auto">
+    <source src="./WhatsApp Audio 2025-06-08 at 19.29.22_fa966369.waptt.opus" type="audio/mpeg">
+</audio>
+
+<br>
+<!-- preload metadata  -->
+ <h2>metadata</h2>
+ <audio controls preload="metadata">
+    <source src="./WhatsApp Audio 2025-06-08 at 19.29.22_fa966369.waptt.opus" type="audio/mpeg">
+ </audio>
+<!-- audio with autoplay loop -->
+ <h2>autoplay</h2>
+   <audio controls>
+        <source src="./WhatsApp Audio 2025-06-08 at 19.29.22_fa966369.waptt.opus" type="audio/mpeg">
+    </audio>
+
+    <!-- prelod non -->
+<h2>non</h2>
+<audio controls preload="none">
+    <source src="./WhatsApp Audio 2025-06-08 at 19.29.22_fa966369.waptt.opus" type="audio/mpeg">
+</audio>    
+
+</body>
+</html>
